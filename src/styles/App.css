@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+.MuiButton-outlined {
+  border-width: 2px !important;
+  color: black !important;
+}
+
+.MuiButton-root {
+  font-weight: bold !important;
+  color: black !important;
+}
+
+.MuiButton-outlined.Mui-disabled {
+  border-color: gray !important;
+  color: gray !important;
+}
+
+.MuiButton-outlined:not(.Mui-disabled) {
+  border-color: #007bff !important;
+}
+
+.maplibregl-popup-content {
+  padding: 10px !important;
+  border: 1px solid black !important;
+  outline: none;
+}
+
+.maplibregl-popup-close-button {
+  position: absolute;
+  padding: 4px;
+  background: white;
+}
